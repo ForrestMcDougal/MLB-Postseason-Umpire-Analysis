@@ -11,6 +11,6 @@ def get_umpire(game_id, api_key):
         
 
 def get_game_by_id(game_id, api_key):
-    game_url = f'http://api.sportradar.us//mlb/trial/v6.5/en/games/{game_id}/pbp.json?api_key={api_key}'
+    game_url = f'http://api.sportradar.us/mlb/trial/v6.5/en/games/{game_id}/pbp.json?api_key={api_key}'
     game_resp = requests.get(game_url).json()
     return game_resp
